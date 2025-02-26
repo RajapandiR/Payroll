@@ -8,6 +8,7 @@ import csvParser from 'csv-parser'; export { csvParser }
 import fs from 'fs'; export { fs };
 export * as bcrypt from 'bcrypt';
 
+export { CompanyRouter } from '../controllers/company/router';
 export { PayrollRouther } from '../controllers/payroll/router';
 export { v4 as uuidv4 } from 'uuid';
 import multer from 'multer'; export { multer };

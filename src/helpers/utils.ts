@@ -32,10 +32,6 @@ class UtilsClass {
     sendMail = (mailOptions: any, cb: any) => {
         let transporter = nodemailer.createTransport({
             service: "gmail", // Or use 'smtp.example.com' for custom SMTP
-            // auth: {
-            //     user: 'rajapandibsc12@gmail.com',
-            //     pass: 'wzbb tywu jrkj mkin'
-            // }
             auth: {
                 user: process.env.USER_EMAIL,
                 pass: process.env.PASS
@@ -43,11 +39,8 @@ class UtilsClass {
         });
 
         transporter.sendMail(mailOptions, (err: any, response: any) => {
-
-            if (err)
-                console.log(err)
             if (response) {
-                console.log(response)
+                // console.log(response)
                 cb(response)
             }
             else

@@ -24,5 +24,7 @@ export const UserMsg = {
     mail404: "Unable sent to mail",
     file404: "File Not support only csv",
     import: "Import Data",
+    bulkMail: "Bulk mail",
+    req404: "Reuest not found"
 
 }

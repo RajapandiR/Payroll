@@ -113,7 +113,7 @@ class PayRollController {
                 .on('end', async () => {
                     this.bulkEmailData(data, company)
                     fs.unlink(process.cwd() + "/" + "uploads/" + file, () => { })
-                    Responder.sendSuccessMessage("Bulk", res);
+                    Responder.sendSuccessMessage(UserMsg.bulkMail, res);
                 })
                 .on('error', async (err: any) => {
                     return Responder.sendFailureMessage(err.message, res);

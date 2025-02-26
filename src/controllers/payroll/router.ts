@@ -2,8 +2,7 @@ import express, { NextFunction, Request, Response } from 'express';
 import { Controller } from './controller';
 import multer from 'multer';
 import path from 'path';
-import { Responder } from '../../helpers/responder';
-import { UserMsg } from '../../resources/message';
+import { Responder, UserMsg } from '../../helpers/paths';
 
 
 
