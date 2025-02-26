@@ -14,7 +14,7 @@ Built using Nodejs, MongoDB, Expressjs
 npm install
 
 // To start the application
-npm run serve
+npm run start
 
 ```
 
