@@ -149,7 +149,7 @@ class PayRollController {
         const payroll: any = await PayrollModel.findOne({ employee: emp._id });
         if (!payroll) return null;
         return {
-            to: "rajapandibsc12@gmail.com",
+            to: emp.email,
             from: 'noreply@gmail.com',
             subject: "Payslip",
             attachments: [
