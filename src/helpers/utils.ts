@@ -3,15 +3,6 @@ import nodemailer from 'nodemailer';
 import puppeteer from 'puppeteer';
 import { Enum, fs, KeyModel, PayrollModel } from "./paths";
 import path from "path";
-// Create a transporter
-// const transporter = nodemailer.createTransport({
-//     service: 'gmail',
-//     auth: {
-//       user: 'your-email@gmail.com', // Your Gmail
-//       pass: 'your-app-password',    // Use an App Password (not your Gmail password)
-//     },
-//   });
-
 
 class UtilsClass {
     hashPassword = async (pwd: string) => {

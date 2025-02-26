@@ -5,7 +5,6 @@ import { AuthMiddleware } from "./src/middleware/authMiddleware";
 const app = express();
 app.use(express.json());
 const port = process.env.PORT;
-console.log(port);
 
 dbConnect.createConnection()
 
